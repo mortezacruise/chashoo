@@ -1,5 +1,12 @@
 import React, {useEffect} from 'react';
-import {View, Image, Text, ScrollView, FlatList, TouchableOpacity} from 'react-native';
+import {
+  View,
+  Image,
+  Text,
+  ScrollView,
+  FlatList,
+  TouchableOpacity,
+} from 'react-native';
 import Slider1 from '../../Assets/mantomodel/mantoBlackCharkhoone.png';
 import Slider2 from '../../Assets/boom/3.jpg';
 import Slider3 from '../../Assets/boom/4.jpeg';
@@ -8,7 +15,7 @@ import Styles from './styles';
 import BackgroundCursor from '../../Components/BackgroundCursor/BackgroundCursor';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import CustomHeader from '../../Reusable/CustomHeader';
-const Bashu = ({ navigation }) => {
+const Bashu = ({navigation}) => {
   const Data = [
     {
       title: 'چای محلی',
@@ -46,9 +53,12 @@ const Bashu = ({ navigation }) => {
         route: ''
     },
   ];
+  const onPressed = () => {
+    navigation.navigate('Intro');
+  };
   const renderItem = ({item}) => {
     return (
-      <TouchableOpacity style={Styles.renderItem}  onPress={() => navigation.navigate(item.route)}>
+      <TouchableOpacity style={Styles.renderItem} onPress={onPressed}>
         <Image source={{uri: item.image}} style={Styles.Images} />
         <View style={Styles.TextHolder}>
           <Text style={Styles.Text}>{item.title}</Text>

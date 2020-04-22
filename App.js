@@ -13,6 +13,7 @@ import ShowProducts from './src/Screens/ShowProducts/index';
 import SplashScreen from './src/Screens/SplashScreen';
 import Jashu from './src/Screens/Jashu';
 import Bashu from './src/Screens/Bashu';
+import Intro from './src/Components/IntroSlider';
 import Tea from './src/Screens/Bashu/TeaScreen'
 
 I18nManager.allowRTL(false);
@@ -92,7 +93,7 @@ const switchNavigator = createStackNavigator(
   {
     Splash: SplashScreen,
     Jashu,
-    StackBashu,
+    Bashu,
     Tabs: Tabs,
   },
   {defaultNavigationOptions: {headerShown: false}},

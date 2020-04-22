@@ -21,40 +21,40 @@ const Bashu = ({navigation}) => {
       title: 'چای محلی',
       image:
         'https://golvani.ir/wp-content/uploads/2018/10/%D8%A8%D8%A7%D8%BA-%DA%86%D8%A7%DB%8C.jpg',
-      route: 'Tea'
+      route: 'Tea',
     },
     {
       title: ' مرکبات ',
       image:
         'https://img9.irna.ir/old/Image/1397/13970821/83097383/N83097383-72655177.jpg',
-        route: ''
+      route: '',
     },
     {
       title: 'برنج اعلا',
       image:
         'https://images.kojaro.com/2018/2/e80efeb6-1541-472e-aff8-1bc6a04b9460.jpg',
-        route: ''
+      route: '',
     },
     {
       title: 'گل گاوزبان',
       image: 'https://namehnews.com/files/fa/news/1398/2/19/555640_726.jpg',
-      route: ''
+      route: '',
     },
     {
       title: 'فندق',
       image:
         'https://img.pastureone.com/img/agro-2019/leshina-lesnoj-oreh-i-funduk-raznica-i-osobennosti.jpg',
-        route: ''
+      route: '',
     },
     {
       title: 'عسل',
       image:
         'https://www.sciencenews.org/wp-content/uploads/2019/12/121119_ti_honeyprotein_feat-1028x579.jpg',
-        route: ''
+      route: '',
     },
   ];
   const onPressed = () => {
-    navigation.navigate('Intro');
+    navigation.navigate('Tea');
   };
   const renderItem = ({item}) => {
     return (

@@ -14,7 +14,7 @@ import SplashScreen from './src/Screens/SplashScreen';
 import Jashu from './src/Screens/Jashu';
 import Bashu from './src/Screens/Bashu';
 import Intro from './src/Components/IntroSlider';
-import Tea from './src/Screens/Bashu/TeaScreen'
+import Tea from './src/Screens/Bashu/TeaScreen';
 
 I18nManager.allowRTL(false);
 // if (I18nManager.isRTL) {RNRestart.Restart();}
@@ -81,19 +81,19 @@ const Tabs = createBottomTabNavigator(
 const StackBashu = createStackNavigator(
   {
     Bashu,
-    Tea
+    Tea,
   },
 
   {
-    headerMode: "none",
-  }
+    headerMode: 'none',
+  },
 );
 
 const switchNavigator = createStackNavigator(
   {
     Splash: SplashScreen,
     Jashu,
-    Bashu,
+    StackBashu,
     Tabs: Tabs,
   },
   {defaultNavigationOptions: {headerShown: false}},

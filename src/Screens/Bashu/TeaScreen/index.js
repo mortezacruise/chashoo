@@ -7,10 +7,10 @@ import FlatProudact from './FlatProudact';
 import {DARK_GREEN} from '../../../Common/Colors';
 import IntroSlider from '../../../Components/IntroSlider';
 
-const TeaScreen = () => {
+const TeaScreen = ({navigation}) => {
   return (
     <View style={Styles.container}>
-      <CustomHeader color={DARK_GREEN} header={'چای'} />
+      <CustomHeader color={DARK_GREEN} header={'چای'} navigation={navigation} />
       <ScrollView>
         <IntroSlider />
         <FlatProudact title={'محصولات جدید'} />

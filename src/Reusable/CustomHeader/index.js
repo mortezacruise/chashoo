@@ -4,7 +4,10 @@ import Icon from 'react-native-vector-icons/FontAwesome5';
 const Chashu = 'چاشو';
 import Styles from './style';
 import {MAIN_COLOR} from '../../Values/Colors';
-const CustomHeader = ({header = Chashu, color = MAIN_COLOR}) => {
+const CustomHeader = ({navigation,header = Chashu, color = MAIN_COLOR,}) => {
+  const onPressed = () => {
+    navigation.navigate('TeaCartScreen');
+  };
   return (
     <View style={[Styles.Container, {backgroundColor: color}]}>
       <Icon
@@ -15,6 +18,15 @@ const CustomHeader = ({header = Chashu, color = MAIN_COLOR}) => {
         color="white"
       />
       <Text style={Styles.Text}>{header}</Text>
+      <Icon
+        name="shopping-basket"
+        size={20}
+        style={Styles.Icon}
+        onPress = {onPressed}
+        color="white" 
+         />
+       
+        
     </View>
   );
 };

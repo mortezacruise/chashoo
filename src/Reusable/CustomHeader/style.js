@@ -8,9 +8,9 @@ const Styles = StyleSheet.create({
     width: '100%',
     height: screenHeight / 12,
     backgroundColor: MAIN_COLOR,
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    flexDirection: 'row',
+    flexDirection: 'row-reverse',
   },
   Text: {
     ...fWhite,
@@ -19,8 +19,7 @@ const Styles = StyleSheet.create({
     ...h3,
   },
   Icon: {
-    position: 'absolute',
-    right: 10,
+    marginHorizontal:10
   },
 });
 export default Styles;

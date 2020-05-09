@@ -68,7 +68,7 @@ const Bashu = ({navigation}) => {
   };
   return (
     <View style={Styles.container}>
-      <CustomHeader header={'پاشو'} />
+      <CustomHeader header={'پاشو'} navigation={navigation} />
       <FlatList
         style={{marginTop: 16}}
         data={Data}

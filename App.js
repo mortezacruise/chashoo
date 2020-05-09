@@ -15,6 +15,7 @@ import Jashu from './src/Screens/Jashu';
 import Bashu from './src/Screens/Bashu';
 import Intro from './src/Components/IntroSlider';
 import Tea from './src/Screens/Bashu/TeaScreen';
+import TeaCartScreen from './src/Screens/TeaCartScreen'
 
 I18nManager.allowRTL(false);
 // if (I18nManager.isRTL) {RNRestart.Restart();}
@@ -82,6 +83,7 @@ const StackBashu = createStackNavigator(
   {
     Bashu,
     Tea,
+    TeaCartScreen
   },
 
   {
